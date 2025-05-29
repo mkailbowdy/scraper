@@ -8,7 +8,7 @@ func (app *application) routes() *http.ServeMux {
 	mux.Handle("GET /static/", http.StripPrefix("/static", fileServer))
 	// Setup routes and corresponding handlers
 	mux.HandleFunc("GET /{$}", app.home)
-	//mux.HandleFunc("GET /shigoto/view/{id}", app.shigotoView)
+	mux.HandleFunc("GET /gseng", app.gseng)
 	//mux.HandleFunc("GET /shigoto/create", app.shigotoCreate)
 	//mux.HandleFunc("POST /shigoto/create", app.shigotoCreatePost)
 	return mux
