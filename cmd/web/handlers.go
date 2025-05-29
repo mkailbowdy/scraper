@@ -83,7 +83,7 @@ func (app *application) home(w http.ResponseWriter, r *http.Request) {
 
 	c.Visit("https://www.goodsmile.com/ja")
 	c.Visit("https://www.goodsmile.com/en")
-	err = os.WriteFile("/ui/static/goodsmile.txt", products, 0644)
+	err = os.WriteFile("ui/static/goodsmile.txt", products, 0644)
 	if err != nil {
 		fmt.Println(err)
 	}
