@@ -1,0 +1,22 @@
+{{define "base"}}
+<!doctype html>
+<html lang='en' class="h-full font-ubuntu">
+<head>
+    <meta charset='utf-8'>
+    <title>{{template "title" .}} - Let's Gosaka</title>
+    <link href="/static/css/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+</head>
+<body class="h-full leading-6 bg-neutral-200 text-gray-600">
+<header class="pt-8 pb-7 px-[calc((100%-800px)/2)] text-center">
+    <h1><a href='/' class="text-4xl font-bold h-9 hover:text-gray-700">Let's Gosaka</a></h1>
+</header>
+{{template "nav" .}}
+<main class="pt-0 pb-px px-[calc((100%-800px)/2)] mt-14 mb-14 overflow-auto min-h-7/12">
+    {{template "main" .}}
+</main>
+
+<footer class="h-14 bg-neutral-100 pt-4 text-center pb-4 px-[calc((100%-800px)/2)]">Powered by <a href='https://golang.org/' class="text-lime-500">Go</a></footer>
+</body>
+</html>
+{{end}}

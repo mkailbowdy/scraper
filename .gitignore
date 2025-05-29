@@ -1,0 +1,47 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Output of `go build`
+/bin/
+/build/
+/dist/
+
+# Vendor directory (if using Go modules and not committing vendor)
+/vendor/
+
+# GoLand / JetBrains IDE
+.idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Dependency directories (GOPATH mode)
+pkg/
+bin/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Test cache
+*.test
+
+# Coverage reports
+*.cover
+coverage.out
+
+# Environment files
+.env
+node_modules/
